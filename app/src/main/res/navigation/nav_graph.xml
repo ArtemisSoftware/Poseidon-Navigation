@@ -45,7 +45,9 @@
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"
             app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"/>
+            app:exitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/chooseRecipientFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
 
     <fragment
@@ -61,6 +63,7 @@
 
         <argument android:name="recipient" android:defaultValue="None"/>
         <argument android:name="amount" app:argType="com.artemissoftware.poseidonnavegation.Money" />
+
     </fragment>
 
     <fragment
@@ -77,7 +80,9 @@
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"
             app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"/>
+            app:exitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/specifyAmountFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
 
     <fragment
